@@ -1,0 +1,51 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap');
+@import "tailwindcss";
+
+
+@theme{
+    --font-signature: "Caveat", cursive;
+}
+:root {
+  font-family: "Rajdhani", sans-serif;
+  line-height: 1.5;
+  font-weight: 500;
+
+  color-scheme: light;
+  color: #1a1a1a;
+  background-color: #f5f2eb;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f2eb;
+  overflow-x: hidden;
+}
+
+.bg-grid-pattern {
+  background-color: #f5f2eb;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Hide Scrollbar completely */
+::-webkit-scrollbar {
+  display: none;
+}
+/* For Firefox */
+html {
+  scrollbar-width: none;
+}
+
+::selection {
+  background: rgba(0, 0, 0, 0.1);
+  color: #000;
+}
