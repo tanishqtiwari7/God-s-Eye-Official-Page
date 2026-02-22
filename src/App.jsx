@@ -45,7 +45,7 @@ function App() {
       {/* Loader now overlays instead of blocking */}
       <Loader />
 
-      <Navbar />
+      {/* <Navbar /> */}
 
       <div className="relative z-10 bg-grid-pattern mb-[100vh]">
         <Hero />
