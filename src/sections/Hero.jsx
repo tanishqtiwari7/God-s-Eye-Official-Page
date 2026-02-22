@@ -1,6 +1,7 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { motion } from "framer-motion";
-import CanvasContainer from "../components/CanvasContainer";
+
+const CanvasContainer = lazy(() => import("../components/CanvasContainer"));
 
 const Hero = () => {
   function init() {
@@ -16,7 +17,9 @@ const Hero = () => {
       id="home"
       className="relative h-screen w-full flex items-center overflow-hidden"
     >
-      <CanvasContainer />
+      <Suspense fallback={null}>
+        <CanvasContainer />
+      </Suspense>
 
       <div className="container mx-auto px-6 md:ml-10 relative z-10 grid grid-cols-1 items-center h-full pointer-events-none">
         <div className="max-w-3xl mt-50 md:mt-12 text-center md:text-left">
